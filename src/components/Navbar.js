@@ -18,10 +18,20 @@ export default class Navbar extends Component {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav align-items-center">
                         <li className="nav-item ml-1">
-                            <Link to="/" className="nav-link">products</Link>
+                            <Link to="/" className="nav-link">Home</Link>
                         </li>
                         <li className="nav-item ml-1">
                             <Link to="/" className="nav-link">AboutUs</Link>
+                        </li>
+                        
+                        <li className="nav-item ml-1">
+                            <Link to="/insert" className="nav-link">insert</Link>
+                        </li>
+                        <li className="nav-item ml-1">
+                            <Link to="/edit" className="nav-link">edit</Link>
+                        </li>
+                        <li className="nav-item ml-1">
+                            <Link to="/view" className="nav-link">view</Link>
                         </li>
                     </ul>
                 </div>
