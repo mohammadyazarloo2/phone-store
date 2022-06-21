@@ -1,20 +1,40 @@
 :root{
-  --mainBlue:#2a2a72;
+  --mainBlue:#5463FF;
   --lightBlue:#009ffd;
   --mainWhite:#f3f3f3;
   --mainDark:#232528;
   --mainYellow:#ffa400;
 }
+@font-face {
+  font-family: walk;
+  src: url("./iran/eot/IRANSansWeb.eot");
+  src: url("./iran/eot/IRANSansWeb.eot?#iefix") format("arada-opentype"),
+    url("./iran/woff/IRANSansWeb.woff") format("woff"),
+    url("./iran/ttf/IRANSansWeb.ttf") format("truetype");
+}
+
 body{
-  font-family: 'Oswald', sans-serif !important;
+  font-family: walk !important;
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
   direction:rtl;
 }
+.d-flex-custom{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
 .text-title{
-  font-family: 'Emilys Candy', cursive;
-  letter-spacing: 0.3em;
   text-transform: uppercase;
+}
+.text-right{
+  text-align: right;
+}
+.text-custom{
+  font-size: 0l.9rem;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: justify;
 }
 .text-blue{
   color: var(--mainBlue);

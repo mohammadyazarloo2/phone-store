@@ -21,27 +21,27 @@ export default class Details extends Component {
                            {/* product info */}
                            <div className="row">
                                <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
-                                   <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-256.png" className="img-fluid" alt="product" />
+                                   <img src={img} className="img-fluid" alt="product" />
                                </div>
                                {/* product text */}
-                               <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
-                                   <h2>Model : {title}  </h2>
-                                   <h4 className="text-title text-uppercase text-muted mt-3 mb-2">
-                                       made by: <span className="text-uppercase"> {company} </span>
-                                   </h4>
-                                   <h4 className="text-blue">
-                                       price :<strong>&</strong>{price}
-                                   </h4>
+                               <div className="col-10 mx-auto col-md-6 my-3 text-capitalize text-right">
+                                   <h2>عنوان : {title}  </h2>
+                                   <h5 className="text-title text-uppercase text-muted text-capitalize font-weight-bold mt-3 mb-2">
+                                       شرکت: <span className="text-uppercase"> {company} </span>
+                                   </h5>
+                                   <h5 className="text-blue text-capitalize font-weight-bold">
+                                       قیمت :{price}<strong>تومان</strong>
+                                   </h5>
                                    <p className="text-capitalize font-weight-bold mt-3 mb-0">
-                                       some info about the product:
+                                       اطلاعاتی درباره محصول :
                                    </p>
-                                   <p className="text-muted lead">
+                                   <p className="text-muted text-custom">
                                        {info}
                                    </p>
                                    {/* button */}
                                    <div>
                                        <Link to="/">
-                                           <ButtonContainer>Back To Product</ButtonContainer>
+                                           <ButtonContainer>بازگشت به محصولات</ButtonContainer>
                                        </Link>
                                        <ButtonContainer cart disabled={inCart ? true : false}
                                        onClick={()=>{
@@ -49,7 +49,7 @@ export default class Details extends Component {
                                            value.openModal(id)
                                        }}
                                        >
-                                           {inCart ? 'in cart' : 'add to cart'}
+                                           {inCart ? 'افزوه شده به کارت' : 'افزودن به کارت'}
                                        </ButtonContainer>
                                    </div>
 

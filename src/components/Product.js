@@ -37,10 +37,11 @@ export default class Product extends Component {
                         <p className="align-self-center mb-0">
                             {title}
                         </p>
-                        <h5 className="text-blue font-italic mb-0">
-                            <span className="mr-1">تومان</span>
+                        <div className="text-blue mb-0">
+                            
                             {price}
-                        </h5>
+                            <span className="mr-1">تومان</span>
+                        </div>
                     </div>
 
                 </div>
@@ -69,6 +70,7 @@ const ProductWrapper=styled.div`
     background:transparent;
     border-top:transparent;
     transition:all 1s linear;
+    text-align:right;
 }
 &:hover{
     .card{
